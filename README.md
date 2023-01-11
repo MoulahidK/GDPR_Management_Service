@@ -21,7 +21,7 @@ Prerequisites :
 
 1. Create a mysql database
 2. Fill the .env file in GDPR_HELPER/API/
-    1.  `DATABASE_URL="mysql://username:password@host:port/DatabaseName"` corresponding to the authentication URL to the database.
+    1.  `DATABASE_URL="mysql://username:password@host:port/DatabaseName"` corresponding to the authentication URL to the database and add the database url to `prisma/schema/prisma`.
     2. `ADMIN_API_KEY` is the key that will be used by external clients to access GDPRMS
     3. `API_ENDPOINT_PROCESS_DATA_REQUEST_ANSWERS="http://localhost:2000/processAnswers"` Is the address to the endpoint of the Provider Application api that is used by the server to notify the Provider server that new data request answers need to be processed.
 
